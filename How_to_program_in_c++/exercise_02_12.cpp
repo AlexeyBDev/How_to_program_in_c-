@@ -1,9 +1,9 @@
 // exercise_02_12	060117
-#include <iostream>
-#include <iomanip>
-
-
-using namespace std;
+//#include <iostream>
+//#include <iomanip>
+//
+//
+//using namespace std;
 
 // exercise 02.12 'a'
 
