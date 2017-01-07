@@ -32,38 +32,57 @@
  *		totalPassedWay = 0; / суммарный пройденный путь
  *		totalAverageConsumption; / суммарный средний расход
  *		
- *		counter = 0; / счетчик емкостей
- *	3.2 while(fuelConsumption не равна -1)
+ *	3.2 while()
  *			ввести расход бензина
+ *			if(fuelConsumption не равна -1) break;
  *			ввести пройденный путь
  *			вывести средний расход
- *			увеличить счетчик на 1
  *			добавить текущий расход бензина к суммарному расходу
  *			добавить текущий пройденный путь к суммарному пройденному пути
  *	3.3 После выхода из цикла подсчитать и вывести средний расход по всем емкостям.
  *	
  *	Запросы в программе и их перевод на английский
- *	- Введите расход бензина (-1, если ввод закончен): - Enter the consumption of gasoline (-1 if the input is finished)
+ *	- Введите расход бензина (-1, если ввод закончен): - Enter the consumption of gasoline (-1 if the input is finished):
  *	- Введите пройденный путь: - Enter the path:
  *	- Для этой емкости получено (километров / литр): - For this capacity received (kilometers / liter):
  *	- средний расход бензина: - Average fuel consumption:
  */
 
 #include <iostream>
+#include <iomanip>
 
 using std::cout;
 using std::cin;
 using std::endl;
+using std::setiosflags;
 
 int main(int argc, char* argv[])
 {
-	int fuelConsumption = 0, // расход бензина
+	double fuelConsumption = 0, // расход бензина
 		passedWay = 0, // пройденные путь
 		averageConsumption; // средний расход
 
-	int totalАuelConsumption = 0, // суммарный расход бензина
+	double totalFuelConsumption = 0, // суммарный расход бензина
 		totalPassedWay = 0, // суммарный пройденный путь
 		totalAverageConsumption; // суммарный средний расход
-	
-	int counter = 0; // счетчик емкостей
+
+	while (true)
+	{
+		cout << "Enter the consumption of gasoline (-1 if the input is finished): ";
+		cin >> fuelConsumption;
+		if(fuelConsumption == -1) break;
+		cout << "Enter the path: ";
+		cin >> passedWay;
+		averageConsumption = passedWay / fuelConsumption;
+		cout << "For this capacity received (kilometers / liter): "
+			<< setiosflags(std::ios::showpoint | std::ios::fixed)
+			<< std::setprecision(6) << averageConsumption << endl << endl;
+		totalFuelConsumption += fuelConsumption;
+		totalPassedWay += passedWay;
+	}
+	totalAverageConsumption = totalPassedWay / totalFuelConsumption;
+	cout << "Average fuel consumption: " << setiosflags(std::ios::showpoint | std::ios::fixed)
+		<< std::setprecision(6) << totalAverageConsumption << endl << endl;
+
+	return 0;	
 }
