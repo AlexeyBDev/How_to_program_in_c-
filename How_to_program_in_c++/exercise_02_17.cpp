@@ -56,43 +56,43 @@
  * - Предел кредита превышен - The credit limit is exceeded
 */
 
-#include <iostream>
-#include <iomanip>
-
-using namespace std;
-
-int main(int argc, char* argv[])
-{
-	int accountNumber; // номер счета
-	
-	double balanceBeginningOfTheMonth = 0, // баланс с начала месяца
-	costs = 0, // расходы
-	incoming = 0, // поступления
-	permissibleAmountOfLoan = 0, // допустимый размер кредита
-	balance = 0; // текущий баланс
-
-	while (true)
-	{
-		cout << "Enter account number (-1 if the input is finished): ";
-		cin >> accountNumber;
-		if (accountNumber <= -1) break;
-		cout << "Enter the opening balance: ";
-		cin >> balanceBeginningOfTheMonth;
-		cout << "Enter the amount of expenses: ";
-		cin >> costs;
-		cout << "Enter the amount of the receipts: ";
-		cin >> incoming;
-		cout << "Enter the credit limit: ";
-		cin >> permissibleAmountOfLoan;
-		balance = balanceBeginningOfTheMonth + costs - incoming;
-		if (balance > permissibleAmountOfLoan)
-		{
-			cout << "Account: " << accountNumber << endl;
-			cout << "Credit limit: " << setiosflags(ios::fixed | ios::showpoint) << setprecision(2)
-				<< permissibleAmountOfLoan << endl;
-			cout << "Balance: " << balance << endl;
-			cout << "The credit limit is exceeded" << endl << endl;
-		}
-	}
-	return 0;
-}
+//#include <iostream>
+//#include <iomanip>
+//
+//using namespace std;
+//
+//int main(int argc, char* argv[])
+//{
+//	int accountNumber; // номер счета
+//	
+//	double balanceBeginningOfTheMonth = 0, // баланс с начала месяца
+//	costs = 0, // расходы
+//	incoming = 0, // поступления
+//	permissibleAmountOfLoan = 0, // допустимый размер кредита
+//	balance = 0; // текущий баланс
+//
+//	while (true)
+//	{
+//		cout << "Enter account number (-1 if the input is finished): ";
+//		cin >> accountNumber;
+//		if (accountNumber <= -1) break;
+//		cout << "Enter the opening balance: ";
+//		cin >> balanceBeginningOfTheMonth;
+//		cout << "Enter the amount of expenses: ";
+//		cin >> costs;
+//		cout << "Enter the amount of the receipts: ";
+//		cin >> incoming;
+//		cout << "Enter the credit limit: ";
+//		cin >> permissibleAmountOfLoan;
+//		balance = balanceBeginningOfTheMonth + costs - incoming;
+//		if (balance > permissibleAmountOfLoan)
+//		{
+//			cout << "Account: " << accountNumber << endl;
+//			cout << "Credit limit: " << setiosflags(ios::fixed | ios::showpoint) << setprecision(2)
+//				<< permissibleAmountOfLoan << endl;
+//			cout << "Balance: " << balance << endl;
+//			cout << "The credit limit is exceeded" << endl << endl;
+//		}
+//	}
+//	return 0;
+//}
