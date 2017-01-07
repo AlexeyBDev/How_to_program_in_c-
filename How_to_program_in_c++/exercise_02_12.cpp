@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>
 
+
 using namespace std;
 
 // exercise 02.12 'a'
@@ -65,18 +66,18 @@ using namespace std;
 
 // exercise 02.12 'e'
 
-int main(int argc, char* argv[])
-{
-	int x;
-	for (x = 1; x <= 20; x++)
-	{
-		cout << x << '\t';
-		if (x % 5 == 0)
-		{
-			cout << endl;
-		}
-	}
-	return 0;
-}
+//int main(int argc, char* argv[])
+//{
+//	int x;
+//	for (x = 1; x <= 20; x++)
+//	{
+//		cout << x << '\t';
+//		if (x % 5 == 0)
+//		{
+//			cout << endl;
+//		}
+//	}
+//	return 0;
+//}
 
 
