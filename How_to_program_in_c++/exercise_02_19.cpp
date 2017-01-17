@@ -38,40 +38,40 @@
  *  - Введите почасовую ставку работника: - Enter hourly rate of worker:
  *  - Заработок: - Earnings:		
  */
-
-#include <iostream>
-#include <iomanip>
-
-using namespace std;
-
-int main(int argc, char* argv[])
-{
-	double earnings = 0.0,			// заработок;
-		hoursWorked = 0.0,		// отработанные часы;
-		rate = 0.0;				// ставка;
-
-	while(hoursWorked != -1)
-	{
-		cout << "Enter the number of hours worked (-1, if the entry is completed):    ";
-		cin >> hoursWorked;
-		if (hoursWorked == -1) break;
-
-		cout << "Enter hourly rate of worker ($00.00):    ";
-		cin >> rate;
-
-		if (hoursWorked <= 40.0)
-		{
-			earnings = hoursWorked * rate;
-		}
-		else
-		{
-			earnings = 40.0 * rate + (hoursWorked - 40.0) * rate * 1.5;
-		}
-
-		cout << "Earnings:   " << setprecision(2) << setiosflags(ios::fixed | ios::showpoint)
-			<< earnings << endl;
-	}
-	cout << endl;
-
-	return 0;
-}
+//
+//#include <iostream>
+//#include <iomanip>
+//
+//using namespace std;
+//
+//int main(int argc, char* argv[])
+//{
+//	double earnings = 0.0,			// заработок;
+//		hoursWorked = 0.0,		// отработанные часы;
+//		rate = 0.0;				// ставка;
+//
+//	while(hoursWorked != -1)
+//	{
+//		cout << "Enter the number of hours worked (-1, if the entry is completed):    ";
+//		cin >> hoursWorked;
+//		if (hoursWorked == -1) break;
+//
+//		cout << "Enter hourly rate of worker ($00.00):    ";
+//		cin >> rate;
+//
+//		if (hoursWorked <= 40.0)
+//		{
+//			earnings = hoursWorked * rate;
+//		}
+//		else
+//		{
+//			earnings = 40.0 * rate + (hoursWorked - 40.0) * rate * 1.5;
+//		}
+//
+//		cout << "Earnings:   " << setprecision(2) << setiosflags(ios::fixed | ios::showpoint)
+//			<< earnings << endl;
+//	}
+//	cout << endl;
+//
+//	return 0;
+//}
