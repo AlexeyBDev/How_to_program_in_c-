@@ -113,6 +113,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="exercise_02_19.cpp" />
     <ClCompile Include="exercise_02_12.cpp" />
     <ClCompile Include="exercise_02_16.cpp" />
     <ClCompile Include="exercise_02_17.cpp" />

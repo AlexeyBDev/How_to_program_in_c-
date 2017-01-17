@@ -25,33 +25,33 @@
 *  - Заработок: - Earnings:
  */
 
-#include <iostream>
-#include <iomanip>
-
-using std::cout;
-using std::cin;
-using std::endl;
-
-using std::setiosflags;
-using std::setprecision;
-using std::ios;
-
-int main(int argc, char* argv[])
-{
-	auto earnings = 0.0, sales = 0.0;
-
-	do
-	{
-		cout << "Enter sales in dollars (-1 if the input is finished): ";
-		cin >> earnings;
-		if(earnings == -1) break;
-		sales = 200.0 + earnings * 0.09;
-		cout << "Earnings: $" << setprecision(2) << setiosflags(ios::fixed | ios::showpoint)
-			<< sales << endl;
-	}
-	while (earnings != -1);
-
-	cout << endl;
-
-	return 0;
-}
+//#include <iostream>
+//#include <iomanip>
+//
+//using std::cout;
+//using std::cin;
+//using std::endl;
+//
+//using std::setiosflags;
+//using std::setprecision;
+//using std::ios;
+//
+//int main(int argc, char* argv[])
+//{
+//	auto earnings = 0.0, sales = 0.0;
+//
+//	do
+//	{
+//		cout << "Enter sales in dollars (-1 if the input is finished): ";
+//		cin >> earnings;
+//		if(earnings == -1) break;
+//		sales = 200.0 + earnings * 0.09;
+//		cout << "Earnings: $" << setprecision(2) << setiosflags(ios::fixed | ios::showpoint)
+//			<< sales << endl;
+//	}
+//	while (earnings != -1);
+//
+//	cout << endl;
+//
+//	return 0;
+//}
