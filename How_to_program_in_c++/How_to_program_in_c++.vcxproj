@@ -121,6 +121,10 @@
     <ClCompile Include="exercise_02_20.cpp" />
     <ClCompile Include="exercise_02_21.cpp" />
     <ClCompile Include="exercise_02_22.cpp" />
+    <ClCompile Include="exercise_02_23.cpp" />
+    <ClCompile Include="exercise_02_24.cpp" />
+    <ClCompile Include="exercise_02_25.cpp" />
+    <ClCompile Include="exercise_02_26.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
