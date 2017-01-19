@@ -113,6 +113,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="exercise_02_29.cpp" />
+    <ClCompile Include="exercise_02_30.cpp" />
+    <ClCompile Include="exercise_02_31.cpp" />
     <ClCompile Include="exercise_02_19.cpp" />
     <ClCompile Include="exercise_02_12.cpp" />
     <ClCompile Include="exercise_02_16.cpp" />
@@ -126,6 +129,7 @@
     <ClCompile Include="exercise_02_25.cpp" />
     <ClCompile Include="exercise_02_26.cpp" />
     <ClCompile Include="exercise_02_27.cpp" />
+    <ClCompile Include="exercise_02_28.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
