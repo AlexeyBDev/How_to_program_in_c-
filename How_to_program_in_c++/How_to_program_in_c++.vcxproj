@@ -130,6 +130,12 @@
     <ClCompile Include="exercise_02_26.cpp" />
     <ClCompile Include="exercise_02_27.cpp" />
     <ClCompile Include="exercise_02_28.cpp" />
+    <ClCompile Include="exercise_02_32.cpp" />
+    <ClCompile Include="exercise_02_33.cpp" />
+    <ClCompile Include="exercise_02_34.cpp" />
+    <ClCompile Include="exercise_02_35.cpp" />
+    <ClCompile Include="exercise_02_36.cpp" />
+    <ClCompile Include="exercise_02_38.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
